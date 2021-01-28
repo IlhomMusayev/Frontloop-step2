@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    
+}
+.card-container{
+    background-color: #fff;
+    /* padding: 10px; */
+    width: 320px;
+}
+a{
+    text-decoration: none;
+}
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:15px;
+    padding-bottom: 5px;
+}
+.dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #dedede;
+    margin: 4px;
+    border-radius: 50%;
+}
+.dot.active{
+    background-color: #aaaaaa;
+}
+h1{
+    text-align: center;
+    color: #333139;
+    font-size: 18px;
+    padding: 10px 0 25px;
+    font-weight: bold;
+}
+.card-options{
+    margin: 0;
+    padding: 0;
+}
+.card-option-item{
+    display: block;
+    border-top: 1px solid #e4e5e5;
+}
+.card-options a:hover{
+    background-color: #efeef0;
+}
+.card-options .visa{
+    background: url(/img/visa.svg) no-repeat;  
+    background-size: 40px;
+    background-position-x: 30px;
+    background-position-y: center;
+}
+.card-options .mastercard{
+    background: url(/img/mastercard.svg) no-repeat;  
+    background-size: 40px;
+    background-position-x: 30px;
+    background-position-y: center;
+}
+.card-options .maestro{
+    background: url(/img/maestro.svg) no-repeat;  
+    background-size: 40px;
+    background-position-x: 30px;
+    background-position-y: center;
+}
+
+.card-options a{
+    padding: 18px 0 18px 90px;
+    font-weight: 800;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+.card-options .active{
+    display: block;
+    color: #333139;
+}
+.card-option-item::after{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(img/check.svg) no-repeat;
+    background-size: contain;
+}   
+.button-next{
+    display: block;
+    text-align: center;
+    border: none;
+    background-color:#5779dd;
+    color: #fff;
+    padding: 18px 0 18px 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+.button-next img{
+    position: absolute;
+    display: inline-block;
+    padding-top: 0px;
+    width: 15px;
+}
+.button-next:hover{
+    background-color: #5c82f5;
+    transition: 0.2s;
+}
+.button-next:active {
+    transform: translateY(2px);
+}
